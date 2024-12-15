@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Shopping Cart</title>
+</head>
+<body>
+<h1 align="center">Your Shopping Cart</h1>
+<form action="checkout.html" method="post">
+<table align="center" border="1" cellpadding="10" cellspacing="0">
+<tr>
+<th>Product</th>
+<th>Quantity</th>
+<th>Price</th>
+<th>Total</th>
+</tr>
+<tr>
+<td>Apple (1 kg)</td>
+<td><input type="number" name="apple_qty" value="1" min="1" readonly></td>
+<td>₹ 300.00</td>
+<td>₹ 300.00</td>
+</tr>
+<tr>
+<td>Milk (1 liter)</td>
+<td><input type="number" name="milk_qty" value="1" min="1" readonly></td>
+<td>₹ 120.00</td>
+<td>₹ 120.00</td>
+</tr>
+<tr>
+<td>Eggs (12 pcs)</td>
+<td><input type="number" name="eggs_qty" value="1" min="1" readonly></td>
+<td>₹ 150.00</td>
+<td>₹ 150.00</td>
+</tr>
+</table>
+<h2 align="center">Total: ₹ 570.00</h2>
+<p align="center">
+<a href="checkout.html"><input type="submit" value="Proceed to Checkout"></a>
+<a href="index.html"><input type="submit" value="Continue Shopping"></a>
+</p>
+</form>
+</body>
+</html>

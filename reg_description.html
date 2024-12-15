@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Online Grocery Registration</title>
+</head>
+<body>
+<form>
+<h1 align="center">Grocery Store Registration</h1>
+<table align="center" cellspacing="10">
+<tr>
+<td>Full Name:</td>
+<td><input name="uname" type="text" placeholder="Enter your full name" required></td>
+</tr>
+<tr>
+<td>Password:</td>
+<td><input name="pwd" type="password" placeholder="Create a password" required></td>
+</tr>
+<tr>
+<td>Email ID:</td>
+<td><input name="email" type="email" required></td>
+</tr>
+<tr>
+<td>Phone Number:</td>
+<td><input name="phno" type="tel" maxlength="10" required></td>
+</tr>
+<tr>
+<td>Delivery Address:</td>
+<td><textarea name="address" placeholder="Enterdelivery address" rows="4" cols="25" required></textarea></td>
+</tr>
+<tr>
+<td>Preferred Delivery Time:</td>
+<td>
+<select name="delivery_time" required>
+<option value="" disabled selected>Select a time slot</option>
+<option value="Morning (8 AM - 12 PM)">Morning (8 AM - 12 PM)</option>
+<option value="Afternoon (12 PM - 4 PM)">Afternoon (12 PM - 4 PM)</option>
+<option value="Evening (4 PM - 8 PM)">Evening (4 PM - 8 PM)</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Preferred Payment Method:</td>
+<td>
+<input name="payment_method" type="radio" value="Credit/Debit Card" required> Credit/Debit Card<br>
+<input name="payment_method" type="radio" value="UPI"> UPI<br>
+<input name="payment_method" type="radio" value="Cash on Delivery"> Cash on Delivery
+</td>
+</tr>
+<tr>
+<td>Do you prefer organic products?</td>
+<td>
+<input name="organic_preference" type="radio" value="Yes" required> Yes<br>
+<input name="organic_preference" type="radio" value="No"> No
+</td>
+</tr>
+<tr>
+<td>Do you have any dietary preferences?</td>
+<td>
+<input name="diet" type="checkbox" value="Vegetarian"> Vegetarian<br>
+<input name="diet" type="checkbox" value="Vegan"> Vegan<br>
+<input name="diet" type="checkbox" value="Gluten-Free"> Gluten-Free<br>
+<input name="diet" type="checkbox" value="None"> None
+</td>
+</tr>
+<tr>
+<td>Birthday (Optional):</td>
+<td><input type="date" name="dob"></td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Register">&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
